@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+
+.cart-main{
+    width: 370px;
+    z-index: 9999;
+    position: fixed;
+    right: 0;
+    background-color: #fff;
+}
+.cart-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 hsla(0,0%,51%,.2);
+    font-family: "Space Grotesk", sans-serif;
+}
+.cart-heading h3{
+    font-size: 17px;
+}
+.empty-cart{
+    height: 450px;
+    width: 100%;
+    border-bottom: 2px solid rgba(233, 232, 232, 0.762);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.empty-cart p{
+    padding-top: 20px;
+    color: #000;
+}
+.empty-cart button{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 22px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Space Grotesk", sans-serif;
+}
+.empty-cart button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.cart-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.cart-total h3{
+    font-weight: 500;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: 700;
+}
+.cart-total-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 20px;
+}
+.cart-total-btn button{
+    font-size: 16px;
+    padding: 14px 120px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+}
+.cart-total-btn button:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s;
+}
+.cart-total-btn a{
+    text-decoration: none;
+    color: #000;
+  }
+.cart-total-btn a:hover{
+    color: #fff;
+}
+.close-button {
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: transparent;
+    font-size: 20px;
+} 
+.rotate {
+    transform: rotate(90deg); 
+}
+  

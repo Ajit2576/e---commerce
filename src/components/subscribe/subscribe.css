@@ -1,0 +1,56 @@
+.sub-main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sub-container{
+    width: 100%;
+}   
+.sub-container img{
+    height: 300px;
+    width: 100%;
+}
+.sub-inner{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    background-color: #fff;
+    z-index: 9;
+    margin: auto;
+    padding: 50px 0;
+    width: 1300px;
+    align-items: center;
+}
+.sub-inner h1{
+    font-size: 35px;
+    line-height: 40px;
+}
+.sub-inp{
+    position: relative;
+}
+.sub-inp input{
+    font-size: 16px;
+    padding: 20px;
+    width: 500px;
+}
+.sub-inp button{
+    top: 9px;
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    padding: 10px 25px;
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+.sub-inp button:hover{
+    background-color: rgb(239, 45, 106);
+    transition: 0.3s;
+}
+

@@ -1,0 +1,25 @@
+.about-main{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.about-container{
+    background-color: #020310;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container img{
+    height: 90vh;
+    width: 100%;
+    opacity: 0.4;
+    object-fit: cover;
+}
+.about-img-text{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    width: 400px;
+    font-size: 30px;
+    line-height: 70px;
+}

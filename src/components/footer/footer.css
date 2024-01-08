@@ -1,0 +1,86 @@
+.footer-main{
+    left: 0;
+    bottom: 0;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.footer-main-conatiner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container-1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 200px;
+}
+.d-flex{
+    display: flex;
+}
+.logo-desi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+.logo-desi p{
+    line-height: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    padding-top: 6px;
+}
+.footer-container-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-container-2 > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer-container-2 > ul > li > a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.footer-container-2 > ul > li > a:hover{
+    color: red;
+    transition: 0.3s;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.141);
+    padding: 10px 0;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: red;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .footer-main{
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-main{
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer-main-conatiner{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}

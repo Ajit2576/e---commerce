@@ -1,0 +1,200 @@
+.popular-main{
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.popular-outbox{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.popular-outbox h1{
+    border-left: 3px solid rgb(239, 45, 106);
+    padding-left: 10px;
+}
+.right-option{
+    display: flex;
+    gap: 30px;
+}
+.right-option p{
+    cursor: pointer;
+    font-size: 15px;
+}
+.right-option p:hover{
+    color: rgb(239, 45, 106);
+}
+.right-option span p{
+    color: rgb(209, 37, 37);
+    border-bottom: 3px solid rgb(239, 45, 106);
+    padding-bottom: 3px;
+}
+.pop-cont img{
+    height: 340px;
+    width: 306px;
+    cursor: pointer;
+}   
+.pop-container{
+    display: grid;
+    grid-template-columns: repeat(4, 306px);
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 0;
+}
+.pop-container p{
+    color: #525258;
+    line-height: 30px;
+    font-size: 15px;
+}
+.pop-container a{
+    text-decoration: none;
+    color: #525258;
+    transition: 0.3s;
+}
+.pop-container a:hover{
+    color: rgb(239, 45, 106);
+    transition: 0.3s;
+}
+
+.pop-cont .abc{
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+.pop-cont img{
+    transition: 0.4s;
+    height: 100%;
+}
+.pop-cont img:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.hover-details button{
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    width: 100%;
+    padding: 12px 0;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.hover-details button:hover{
+    background-color: rgb(239, 45, 106);
+}
+.pop-cont .abc:hover .hover-details button,  .pop-cont .abc:hover .pop-icons{
+    visibility: visible;
+}
+
+.pop-icons{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+    margin-top: 40px;
+    visibility: hidden;
+}
+.bg-wt{
+    background-color: #fff;
+    padding: 6px;
+    box-shadow: 0 0 10px 0 hsla(0,0%,51%,.2);
+    cursor: pointer;
+}
+.bg-wt:hover{
+    background-color: rgb(239, 45, 106);
+    color: #fff;
+}
+.icon-shop{
+    font-size: 22px;
+}
+.pop-discount{
+    position: absolute;
+    top: 20px;
+}
+.pop-discount{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.pop-discount p{
+    padding: 0 12px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .pop-cont img{
+        height: 305px;
+        width: 261px;
+    }
+    .pop-container{
+        grid-template-columns: repeat(4, 261px);
+    }
+    .pop-cont .abc{
+        height: 305px;
+    }   
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .pop-container{
+        grid-template-columns: repeat(3, 296px);
+    }
+    .pop-cont img{
+        height: 396px;
+        width: 330px;
+    }  
+}
+
+@media screen and (max-width: 992px) {
+    .pop-container{
+        grid-template-columns: repeat(2, 306px);
+    }
+    .pop-cont img{
+        height: 393px;
+        width: 336px;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .pop-cont img{
+        height: 288px;
+        width: 246px;
+    }  
+    .popular-outbox{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+    }    
+    .pop-container{
+        grid-template-columns: repeat(2, 250px);
+    }
+    .pop-cont .abc{
+        height: 288px;
+    }   
+}
+
+@media screen and (max-width: 576px) {
+    .pop-container{
+        grid-template-columns: none;
+    }
+    .pop-cont img{
+        height: 646px;
+        width: 551px;
+    } 
+    .pop-cont .abc{
+        height: 646px;
+    }
+}

@@ -1,0 +1,129 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home{
+    max-width: 1300px;
+    margin: auto;
+}
+.home-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+}
+.home-left-container p{
+    font-size: 18px;
+    padding-left: 5px;
+    line-height: 18px;
+    margin: 5px 0;
+    border-left: 2px solid red;
+    color: #525258;
+}
+.home-left-container h1{
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 600;
+}
+.home-left-container button{
+    padding: 10px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+    border: 1.5px solid black;
+    cursor: pointer;
+}
+.home-left-container a{
+    text-decoration: none;
+    color: #000;
+}
+.home-left-container button:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+.home-right-container img{
+    margin-top: 200px;
+    height: 600px;
+    width: 600px;
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    .home, .home-main{
+        max-width: 1120px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .home, .home-main{
+        width: 935px;
+    }
+    .home-left-container h1{
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home-left-container h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .home-left-container p{
+        font-size: 15px;
+        line-height: 14px;
+    }
+    .home-left-container button{
+        padding: 8px 18px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .home, .home-main{
+        width: 640px;
+    }
+    .home-right-container img{
+        margin-top: 100px;
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home, .home-main{
+        width: 520px;
+    }
+    .home-right-container img{
+        height: 300px;
+        width: 300px;
+    }
+    .home-left-container h1{
+        font-size: 37px;
+        line-height: 37px;
+    }
+    .home-main{
+        flex-direction: column;
+        padding-top: 80px;
+    }
+    .home-right-container img{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home-main{
+        flex-direction: column;
+        padding-top: 80px;
+    }
+    .home-right-container img{
+        margin-top: 0;
+    }
+}
+

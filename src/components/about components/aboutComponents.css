@@ -1,0 +1,247 @@
+.about-bio-main{
+    display: flex;
+    width: 1300px;
+    margin: 100px auto;
+    justify-content: space-between;
+}
+.about-bio-heading{
+    font-size: 20px;
+    width: 30%;
+}
+.about-bio-pera{
+    width: 60%;
+    font-size: 18px;
+    color: #525258;
+}
+.about-bio-pera span p{
+    margin-top: 20px;
+}
+
+
+/* ----------About-Details------- */
+
+
+.about-details-main{
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.about-d1{
+    border: 1px solid #52525823;
+    height: 200px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    gap: 30px;
+    transition: 0.3s;
+}
+.about-d1:hover{
+    box-shadow: 0 0 20px 0 hsla(0,0%,51%,.2);
+    border: 1px solid #fff;
+    transition: 0.3s;
+}
+.about-d-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-d1 img:hover, .about-d1:hover img{
+    animation: imgHover 0.5s;
+}
+@keyframes imgHover{
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.about-d-icon span a{
+    font-size: 30px;
+    color: #000;
+    transition: 0.3s;
+}
+.about-d-icon span a:hover{
+    color: rgb(239, 45, 106);
+    transition: 0.3s;
+}
+.about-d-details p{
+    color: #525258;
+    font-weight: 700;
+}
+.about-d-details h1 a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-size: 27px;
+    color: #000;
+}
+.about-d-details h1 a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0px;
+    transition: width 0.3s ease;
+}
+.about-d-details h1 a:hover::after{
+    width: 100%;
+}
+
+
+/* ----------About-Image-Slider------- */
+
+
+.about-slider-main{
+    border: 1px solid red;
+    margin-top: 100px;
+}
+.about-slider-main img{
+    height: 600px;
+    width: 800px;
+}
+
+
+/* ----------Our-Award---------- */
+
+
+.award-main{
+    max-width: 1300px;
+    margin: auto;
+}
+.award-heading h1{
+    font-size: 80px;
+    text-align: center;
+    border-bottom: 1px solid #52525823;
+    padding: 50px 0;
+}
+.award-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #52525823;
+    padding: 40px 0;
+    position: relative;
+}
+.award-details::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    background-image: linear-gradient(329deg,#ff91fa 13.55%,#fa6490 48.54%,#f7d86a 86.44%);
+    transform: matrix(-1,0,0,1,0,0);
+    transition: all .6s ease-out 0s;
+}
+.award-details:hover::after{
+    width: 100%;
+}
+.award-details a{
+    color: #000;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.award-details a:hover{
+    color: rgb(239, 45, 106);
+    transition: 0.3s;
+}
+.award-details h1{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.award-details h1::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 2px;
+    transition: width 0.3s ease;
+}
+.award-details h1:hover::after{
+    width: 100%;
+}
+
+
+/* ----------Team---------- */
+
+
+.about-team-main{
+    width: 1300px;
+    margin: 100px auto;
+}
+.about-team-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.about-team-heading h1{
+    font-size: 70px;
+    line-height: 65px;
+}
+.jOt{
+    display: flex;
+    align-items: end;
+}
+.jOt a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    border-bottom: 2px solid;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.jOt a:hover{
+    color: rgb(239, 45, 106);
+}
+.about-team-slider{
+    padding: 60px 0;
+}
+.about-team-slider img{
+    height: 360px;
+}
+.team-img{
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+.team-icon{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    bottom: 20px;
+    right: 40px;
+}
+.team-icon a{
+    background-color: #6364db;
+    color: #fff;
+    padding: 8px;
+    display: flex;
+    font-size: 18px;
+   
+}
+.team-icon a:hover{
+    background-color: rgb(239, 45, 106);
+}
+
+
+/* -----------About-Brand------- */
+
+
+.about-brand-main{
+    border: 1px solid green;
+    max-width: 1300px;
+    margin: auto;
+}

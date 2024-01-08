@@ -1,0 +1,94 @@
+.shop-filter-container > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.shop-filter-container > ul > li > a{
+    text-decoration: none;
+    color: #525258;
+}
+
+
+
+/* ----------------------- */
+
+.mt{
+    margin-top: 30px;
+}
+.filterBrand-head p{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.head-fil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+.search-brand{
+    position: relative;
+    margin: 35px 0;
+    display: flex;
+    align-items: center;
+}
+.search-brand input{
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    text-indent: 10px;
+}
+.shop-search-icon{
+    position: absolute;
+    right: 5px;
+}
+.shop-search-icon button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.brand-list{
+    padding: 5px 0;
+}
+.brand-list p{
+    font-size: 16px;
+}
+
+
+
+
+/* ----------------------- */
+
+
+.shop-color-head p{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.shop-cors{
+    padding: 5px 0;
+}
+.colors-filter{
+    margin-top: 20px;
+}
+
+
+
+
+
+/* --------------------- */
+
+.price-head p{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.filter-p{
+    margin-top: 20px;
+}
+.price{
+    padding: 5px 0;
+}
