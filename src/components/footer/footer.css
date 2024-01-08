@@ -80,7 +80,12 @@
 @media screen and (max-width: 992px) {
     .footer-main-conatiner{
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         gap: 20px;
+    }
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
     }
 }

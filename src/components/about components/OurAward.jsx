@@ -11,16 +11,16 @@ function OurAward() {
       </div>
 
       <div className="award-details">
-        <div>
+        <div className='lft-res'>
           <p>FREE SHIPPING</p>
         </div>
 
-        <div>
+        <div >
           <h1>Modern painting award jump</h1>
           <p>Runner Up - "Decor of the week"</p>
         </div>
 
-        <div className="award-arrow">
+        <div className="award-arrow lft-res">
           <Link><HiArrowRight /></Link>
         </div>  
       </div>

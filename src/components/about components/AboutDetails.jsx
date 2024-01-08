@@ -8,7 +8,7 @@ function AboutDetails() {
 
   return (
 
-    <div className="about-details-main">
+    <div className="about-details-main d-grid">
       
       <div className="about-d1 hov">
         <div className='about-d-icon'>

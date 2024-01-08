@@ -19,7 +19,7 @@ function About() {
       </div>
       <AboutBio />
       <AboutDetails />
-      <AboutImgSlider />
+      {/* <AboutImgSlider /> */}
       <OurAward />
       <AboutTeam />
     </div>
