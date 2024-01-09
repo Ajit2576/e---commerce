@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './signup.css';
 import { FaRegUser } from 'react-icons/fa';
 import { MdMailOutline } from "react-icons/md";
 import FormInput from '../../components/FormInput';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
+import FormValidation from '../../components/FormValidation';
 
 function Signup() {
     const location = useLocation()
@@ -26,37 +27,23 @@ function Signup() {
       setShowPassword1((prevShowPassword) => !prevShowPassword);
     };
 
-    //Form Validation
-    const [passMatch, setPassMatch] = useState(false);
-    const [emailValid, setEmailValid] = useState(false);
-    const handleSubmit = (e) => {
+
+    const [errors, setError] = useState({})
+    const handlelogin = (e) => {
         e.preventDefault();
-
-        if (formData.email !== "ajit@gmail.com" && formData.password !== "test123"){
-            setEmailValid(true)
-            const timer = setTimeout(() => {
-                setEmailValid(false)
-            }, 2000)
-        }
-        else{
-            alert("Login Successfully")
-        }
-
-
-        if (formData.password !== formData.conformPassword){
-            setPassMatch(true)
-            const timer = setTimeout(() => {
-                setPassMatch(false)
-            }, 2000)
-        }
-
+        setError(FormValidation(formData))
     }
-
-
+    
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
+
+    useEffect(() => {
+        if(Object.keys(errors).length === 0 && (formData.name !== "" && formData.email !== "" && formData.password !== "" && formData.conformPassword !== "")){
+            alert("Registartion Successfull")
+        }
+    },[errors])
 
   return (
 
@@ -67,7 +54,7 @@ function Signup() {
             {location.pathname === "/login" ? <p>Enter your credentials to acces your account.</p> : location.pathname === "/register" ? <p>You can signup with you social account below</p> : <p>Enter your email address to request password reset.</p>}
         </div>
 
-            <form className='sign-form' action="#" onSubmit={handleSubmit}>
+            <form className='sign-form' >
                {location.pathname === "/register" && <div style={{ position: "relative" }}>
                 <input
                     type="text"
@@ -79,8 +66,10 @@ function Signup() {
                 />
                     <span className="inp-icon-1">
                         <FaRegUser />
-                    </span> </div>}
-
+                    </span> 
+                </div>}
+                {location.pathname === "/register" && errors.name && <p style={{color:'red', fontSize:'14px'}}>{errors.name}</p> }
+                    
                 <div style={{ position: "relative" }}>
                     <input
                     type="email"
@@ -91,11 +80,10 @@ function Signup() {
                     <span className="mail-icon">
                         <MdMailOutline /> 
                     </span>
-                    {emailValid && <p>Invalid Credentials</p>}
                 </div>
-                
-                {
-                location.pathname !== "/forgot" &&
+                {location.pathname === "/register" && errors.email && <p style={{color:'red', fontSize:'14px'}}>{errors.email}</p> }
+
+                {location.pathname !== "/forgot" &&
                 <FormInput 
                     showPassword={showPassword} 
                     value={formData.password} 
@@ -106,7 +94,7 @@ function Signup() {
                     name={"password"} 
                     type={"password"}/>
                 }
-                {passMatch && <p>error</p>}
+                {location.pathname === "/register" && errors.password && <p style={{color:'red', fontSize:'14px'}}>{errors.password}</p> }
                 
                 {location.pathname === "/register" &&
                 <FormInput 
@@ -119,6 +107,7 @@ function Signup() {
                     name={"conformPassword"} 
                     type={"password"}/>
                 }
+                {location.pathname === "/register" && errors.conformPassword && <p style={{color:'red', fontSize:'14px'}}>{errors.conformPassword}</p> }
 
                 {location.pathname === "/login" &&
                 <div className='password-options'>
@@ -127,7 +116,7 @@ function Signup() {
                 </div>
                 }
 
-                {location.pathname === "/login" ? <button>Sign In</button> : location.pathname === "/register" ? <button>Sign Up</button> : <button>Send Request</button>}
+                {location.pathname === "/login" ? <button>Sign In</button> : location.pathname === "/register" ? <button onClick={handlelogin}>Sign Up</button> : <button>Send Request</button>}
 
                 {location.pathname === "/login" ? <p>Don't have an account?<Link to="/register" > Register here</Link></p> : location.pathname === "/register" ? <p>Already have an account?<Link to="/login"> Login here</Link></p> : <p>Remember your password? <Link to={"/login"}>Login</Link></p>}
 

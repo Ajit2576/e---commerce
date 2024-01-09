@@ -34,7 +34,7 @@ function Home() {
                 {/* <Deal /> */}
                 <Banner />
                 <Options />
-                {/* <Subscribe /> */}
+                <Subscribe />
             </div>
         </>
     )
