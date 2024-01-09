@@ -81,7 +81,7 @@ function Signup() {
                         <MdMailOutline /> 
                     </span>
                 </div>
-                {location.pathname === "/register" && errors.email && <p style={{color:'red', fontSize:'14px'}}>{errors.email}</p> }
+                {location.pathname === "/register"  && errors.email && <p style={{color:'red', fontSize:'14px'}}>{errors.email}</p> }
 
                 {location.pathname !== "/forgot" &&
                 <FormInput 

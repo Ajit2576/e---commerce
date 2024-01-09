@@ -1,12 +1,13 @@
 .signup-main{
-    max-width: 1518px;
+    max-width: 1300px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 160px;
 }
 .signup-main-container{
-    width: 40%;
+    width: 50%;
     box-shadow: 3px 3px 30px 5px #888888;
     padding-bottom: 50px;
 }
@@ -18,6 +19,10 @@
 }
 .signup-container h1{
     line-height: 60px;
+    font-size: 2.5vw;
+}
+.signup-container p{
+    font-size: 1.2vw;
 }
 
 .sign-form{
@@ -29,7 +34,7 @@
     position: relative;
 }
 .sign-form input{
-    width: 450px;
+    width: 30vw;
     padding: 20px;
     font-size: 15px;
     text-indent: 20px;
@@ -78,3 +83,4 @@
     align-items: center;
     gap: 5px;
 }
+
