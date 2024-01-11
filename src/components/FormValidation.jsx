@@ -30,7 +30,7 @@ function FormValidation(formData) {
         errors.password = "*Please enter password"
     }
     else if(formData.password.length < 8){
-        errors.password = "*Please enter at list 8 character password"
+        errors.password = "*Password more then 8 character"
     }
     else if(!formData.conformPassword){
         errors.conformPassword = "*Please conform your password"
